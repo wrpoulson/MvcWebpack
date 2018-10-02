@@ -37,7 +37,9 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    <script src="~/Scripts/build/bundle.js"></script>
+    @Html.WebPackScript("appOne")
+    @Html.WebPackCss("appOne")
+
     @RenderSection("scripts", required: false)
 </body>
 </html>
